@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-pink: #FF6B9D;
-    --light-pink: #FFB6D9;
+    --primary-pink: #395886;
+    --light-pink: #D5DEEF;
     --dark-purple: #8B5CF6;
     --light-purple: #C4B5FD;
     --dark-bg: #1F1633;
@@ -56,7 +56,7 @@ body {
     position: absolute;
     width: 4px;
     height: 4px;
-    background: rgba(255, 107, 157, 0.6);
+    background: rgba(112, 107, 255, 0.6);
     border-radius: 50%;
     animation: float 8s infinite ease-in-out;
 }
@@ -151,7 +151,7 @@ body {
 }
 
 .card-front::-webkit-scrollbar-thumb {
-    background: rgba(255, 107, 157, 0.5);
+    background: rgba(144, 107, 255, 0.5);
     border-radius: 3px;
 }
 
@@ -523,7 +523,7 @@ body {
     background: linear-gradient(135deg, var(--primary-pink), var(--light-pink));
     border-radius: 8px;
     animation: bounce 2s ease-in-out infinite;
-    box-shadow: 0 8px 20px rgba(255, 107, 157, 0.3);
+    box-shadow: 0 8px 20px rgba(107, 117, 255, 0.3);
 }
 
 .gift-top {
