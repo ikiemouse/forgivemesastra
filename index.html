@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Than Just “Sorry”</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Background Animations -->
+        <div class="background">
+            <div class="floating-particle"></div>
+            <div class="floating-particle"></div>
+            <div class="floating-particle"></div>
+            <div class="floating-particle"></div>
+            <div class="floating-particle"></div>
+        </div>
+
+        <!-- Main Card -->
+        <div class="card-wrapper">
+            <!-- Front Card -->
+            <div class="card-container" id="cardContainer">
+                <div class="card-front">
+                    <!-- Header Section -->
+                    <div class="card-header">
+                        <div class="header-decoration">
+                            <span class="deco-element">✧</span>
+                            <span class="deco-element">✧</span>
+                            <span class="deco-element">✧</span>
+                        </div>
+                        <h1 class="card-title">I'm Sorry</h1>
+                        <div class="header-decoration">
+                            <span class="deco-element">✧</span>
+                            <span class="deco-element">✧</span>
+                            <span class="deco-element">✧</span>
+                        </div>
+                    </div>
+
+                    <!-- Animated Heart -->
+                    <div class="heart-container">
+                        <div class="heart" id="heart">
+                            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M50,85 C25,70 10,55 10,40 C10,25 20,15 32,15 C40,15 48,22 50,30 C52,22 60,15 68,15 C80,15 90,25 90,40 C90,55 75,70 50,85 Z" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="heart-pulse"></div>
+                    </div>
+
+                    <!-- Main Message -->
+                    <div class="message-section">
+                        <p class="main-message" id="mainMessage">Hey, I’m sorry about yesterday. I didn’t mean to hurt you.</p>
+                    </div>
+
+                    <!-- Interactive Elements -->
+                    <div class="interactive-section">
+                        <div class="reason-box">
+                            <h3>Pieces of My Apology</h3>
+                            <div class="reason-text" id="reasonText">
+                                I reacted without really thinking things through. I should’ve handled it better.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Buttons Section -->
+                    <div class="buttons-section">
+                        <button class="btn btn-primary" id="revealBtn">
+                            <span>Click This One!</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                        <button class="btn btn-secondary" id="changeMessageBtn">
+                            <span>Here! Here! Here!</span>
+                            <span class="btn-icon">✨</span>
+                        </button>
+                    </div>
+
+                    <!-- Gift Box -->
+                    <div class="gift-section">
+                        <button class="gift-box" id="giftBox">
+                            <div class="gift-wrapper">
+                                <div class="gift-top"></div>
+                                <div class="gift-box-main"></div>
+                                <div class="gift-ribbon"></div>
+                            </div>
+                            <p class="gift-text">Click Here Too! 🎁</p>
+                        </button>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="card-footer">
+                        <p class="signature">Dengan sepenuh hati,</p>
+                        <p class="from">Tolong maafkan aku DD 💙</p>
+                    </div>
+                </div>
+
+                <!-- Card Back (Hidden, revealed on click) -->
+                <div class="card-back" id="cardBack">
+                    <div class="back-content">
+                        <h2>I’m sorry if what I did upset you.</h2>
+                        <div class="confession" id="confession">
+                            <p>I know I messed up.</p>
+                            <p>I should’ve been more careful.</p>
+                            <p>You didn’t deserve that.</p>
+                            <p>I’ll be better next time.</p>
+                        </div>
+                        <button class="btn btn-primary" id="backBtn" onclick="document.getElementById('cardContainer').style.transform='rotateY(0deg)'">
+                            <span>Kembali</span>
+                            <span class="btn-icon">←</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="floating-hearts">
+            <div class="float-heart">❤️</div>
+            <div class="float-heart">💙</div>
+            <div class="float-heart">💜</div>
+            <div class="float-heart">🌹</div>
+            <div class="float-heart">✨</div>
+        </div>
+
+        <!-- Message Popup -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <button class="popup-close" onclick="closePopup()">×</button>
+                <h2 id="popupTitle">Hadiah Spesial Untukmu!</h2>
+                <div id="popupBody" class="popup-body"></div>
+            </div>
+        </div>
+
+        <!-- Confetti Container -->
+        <div class="confetti-container" id="confettiContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
